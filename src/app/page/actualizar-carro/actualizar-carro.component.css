@@ -1,0 +1,23 @@
+#contact {
+    width: 400px;
+    margin: 40px auto; /* Margen vertical 20px y centrado horizontalmente */
+  
+    padding: 20px; /* Espacio interno entre el borde y el contenido del formulario */
+    border: 3px solid black; /* Borde del formulario */
+    border-radius: 5px; /* Bordes redondeados para el formulario */
+  
+    h2 {
+        margin-bottom: 20px;
+    }
+  
+    .form-field {
+      /* Margen para cada campo de entrada */
+      margin-bottom: 16px;
+    }
+  
+    button {
+      /* Margen para el botón "Crear" */
+      margin-top: 16px;
+      
+    }
+}

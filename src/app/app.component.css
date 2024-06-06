@@ -1,0 +1,6 @@
+body {
+    /* Establece la imagen de fondo y configura la apariencia */
+  /*  background-image: url('https://www.enter.co/wp-content/uploads/2016/10/parking-parking-lot-underground-garageFINAL.jpg');*/
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+}

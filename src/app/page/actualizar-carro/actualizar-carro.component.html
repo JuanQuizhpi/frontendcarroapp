@@ -1,0 +1,21 @@
+<div id="contact">
+  <h2>Actualice sus Datos</h2>
+  <form>
+    <mat-form-field class="form-field" >
+      <mat-label>Placa:</mat-label>
+      <input matInput type="text" name="placa" placeholder="Placa..." [(ngModel)]="carro.placa" readonly>
+    </mat-form-field>
+
+    <mat-form-field class="form-field">
+      <mat-label>Marca:</mat-label>
+      <input matInput type="text" name="marca" placeholder="Marca..." [(ngModel)]="carro.marca">
+    </mat-form-field>
+
+    <mat-form-field class="form-field">
+      <mat-label>Modelo:</mat-label>
+      <input matInput type="text" name="modelo" placeholder="Modelo..." [(ngModel)]="carro.modelo">
+    </mat-form-field>
+    <br>
+    <button mat-raised-button color="warn" (click)="modificar()">Actualizar</button>
+  </form>
+</div>
