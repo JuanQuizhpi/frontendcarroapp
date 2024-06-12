@@ -7,25 +7,25 @@ import { Carro } from '../domain/carro';
 })
 export class CarroService {
 
-  private apiUrl = 'http://34.74.78.120:8080/carrobe/rs/carros'; 
+  private apiUrl = 'http://35.229.110.18:8080/carrobe/rs/carros'; 
 
   constructor(private http: HttpClient) { }
 
   save(carro: Carro) {
-    return this.http.post<any>("http://34.74.78.120:8080/carrobe/rs/carros", carro)
+    return this.http.post<any>("http://35.229.110.18:8080/carrobe/rs/carros", carro)
   }
 
   getAll(){
-    return this.http.get<any>("http://34.74.78.120:8080/carrobe/rs/carros/list");
+    return this.http.get<any>("http://35.229.110.18:8080/carrobe/rs/carros/list");
    }
 
    delete(carro: Carro) {
-    const url = `http://34.74.78.120:8080/carrobe/rs/carros?placa=${carro.placa}`;
+    const url = `http://35.229.110.18:8080/carrobe/rs/carros?placa=${carro.placa}`;
     return this.http.delete(url);
 }
 
   update(Carro: Carro) {
-    const url = 'http://34.74.78.120:8080/carrobe/rs/carros';
+    const url = 'http://35.229.110.18:8080/carrobe/rs/carros';
     return this.http.put(url, Carro);
   }
 }
